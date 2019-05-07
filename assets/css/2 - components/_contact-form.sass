@@ -1,0 +1,79 @@
+//
+// CONTACT FORM
+//
+
+.wpcf7
+    .wpcf7-form
+        position: relative
+        transition: all .3s
+
+    // If form has an error, i.e., incomplete field
+    .wpcf7-form.invalid,
+    // If sending failed
+    .wpcf7-form.failed
+        // padding-top: 60px
+
+    
+    // Span
+    .wpcf7-form-control-wrap
+        width: 100%
+        
+        // Input
+        .wpcf7-form-control
+            width: 100%
+            font-family: $font-secondary
+            font-size: .9rem
+            padding: 15px 20px
+            border-color: rgba(0, 0, 0, 0.2)
+            border-radius: 2px
+
+        // Alert Message
+        .wpcf7-not-valid-tip
+            font-size: .9rem
+            margin-top: 5px
+            color: $c-red
+    
+    // Submit Button
+    .wpcf7-submit
+        display: block
+        background: transparent
+        position: relative
+        padding: 15px 35px
+        border: 2px solid $c-accent
+        border-radius: 0
+        color: $c-accent
+        font-size: .9rem
+        text-transform: uppercase
+        transition: all .3s           
+
+        &:focus
+            outline: none
+            border-color: $c-accent
+        &:hover
+            cursor: pointer
+            border: 2px solid $c-accent
+            background-color: $c-accent
+            color: white
+    
+    // AJAX Loader
+    .ajax-loader
+        margin-left: 20px !important
+
+    // Response output
+    .wpcf7-response-output
+        // position: absolute
+        // top: 0
+        // left: 0
+        // right: 0
+        
+        background-color: $c-red
+        border: 2px solid $c-red
+        padding: 10px 20px
+        margin: 0
+        margin-top: 20px
+        font-size: .9rem
+        color: white
+
+    // Bottom Error Message
+    // .wpcf7-validation-errors
+

@@ -1,0 +1,6 @@
+<?php
+/**
+ * Single Sermon Card
+ */
+?>
+

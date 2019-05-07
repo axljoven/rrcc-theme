@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="434.5 231.57 163.167 11.868">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <g id="left" transform="translate(0 -20)">
+    <line id="line-ver" class="cls-1" x2="163" transform="translate(434.5 257.5)"/>
+    <g id="lines-hor" transform="translate(523 179)">
+      <line id="line-hor" class="cls-1" x1="8" y2="10" transform="translate(60.767 74.191) rotate(-9)"/>
+      <line id="line-hor-2" data-name="line-hor" class="cls-1" x1="8" y2="10" transform="translate(64.767 74.191) rotate(-9)"/>
+    </g>
+  </g>
+</svg>

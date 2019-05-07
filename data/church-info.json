@@ -1,0 +1,27 @@
+{
+    "info" : [
+        {
+            "name" : "address",
+            "icon" : "pin",
+            "info" : "P&S Building, 717 Aurora Blvd<br/>Quezon City, Philippines"
+        },
+        {
+            "name" : "phone",
+            "icon" : "phone-portrait",
+            "info" : "0977 821 3732"
+        },
+        {
+            "name" : "schedule",
+            "icon" : "calendar",
+            "info" : "Sunday @ 10:00 AM - 12:00 Noon<br/>Wednesday @ 7:30 PM"
+        }
+    ],
+
+    "social" : [
+        { 
+            "name" : "facebook",
+            "icon" : "logo-facebook",
+            "url" : "facebook.com"
+        }
+    ]
+}

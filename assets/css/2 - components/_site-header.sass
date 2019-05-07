@@ -1,0 +1,65 @@
+//
+// SITE HEADER
+//
+
+.site-header
+    position: fixed
+    background-color: rgba(35, 38, 45, .83)
+    z-index: 100
+
+
+    // 
+    // Custom Logo
+    // 
+
+    .site-logo
+        position: absolute
+        top: 0
+        left: 30px
+        transition: all .3s ease
+
+        &:hover
+            top: 5px
+
+
+
+    //
+    // Main Menu
+    //
+
+    .menu
+        &-item
+            display: inline-block
+            margin: 0 10px
+        &-link
+            display: inline-block
+            padding: 10px
+            color: $white
+            transition: all .3s
+
+            &:hover
+                color: $c-accent
+
+    
+
+    //
+    // Search Icon
+    //
+
+    .search-icon
+        width: 60px
+        background-color: rgba(255,255,255,.2)
+        transition: all .3s
+
+        a:focus
+            outline: none
+
+        .icon
+            font-size: 28px
+            color: white
+            transition: all .3s
+
+        &:hover
+            background-color: white
+            .icon
+                color: $c-accent
