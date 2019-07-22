@@ -264,7 +264,7 @@ p {
   position: relative; }
   .subscription-inner {
     height: 465px;
-    background-color: #FCFCFC; }
+    background-color: #ececec; }
   .subscription .emaillist {
     width: 40%; }
   .subscription-header {
@@ -450,8 +450,12 @@ p {
   color: white; }
 
 #page-home .banner-content {
-  font-size: 3.7rem;
+  text-transform: uppercase;
+  font-size: 4.5rem;
   line-height: 1; }
+
+#page-home .banner .smaller {
+  font-size: 3.5rem; }
 
 #page-home .section.about .gallery {
   overflow: hidden;

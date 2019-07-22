@@ -121,11 +121,12 @@ add_action( 'widgets_init', 'rrcc_theme_widgets_init' );
  */
 function rrcc_theme_scripts() {
 	wp_enqueue_style( 'rrcc-theme-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'tailwind', 'https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css' );
+	wp_enqueue_style( 'tailwind', 'https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css' );
 	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700|Playfair+Display:900' );
 	wp_enqueue_style( 'ionicons', 'https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css' );
 	wp_enqueue_style( 'main-stylesheet', get_template_directory_uri() . '/assets/css/main.css' );
 
+	wp_enqueue_script( 'rrcc-jquery', 'https://code.jquery.com/jquery-3.4.1.min.js', array(), '3.4.4', true );
 	wp_enqueue_script( 'rrcc-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'rrcc-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0.0', true );
@@ -193,7 +194,7 @@ function bdump($e) {
 function get_menu($name, $class) {
 	// Get menu
 	$arr = wp_get_nav_menu_items($name);
-	bdump($arr);
+	// bdump($arr);
 	if ( $arr ) :
 		// Generate menu
 		$menu = "<ul class='menu m-0 px-0 py-1 " . $class . "'>";
@@ -289,7 +290,9 @@ function banner_header($text) {
  */
 
 function banner_content($text) {
-	$content = "<p class='banner-content font-black'>$text</p>";
+	$content = "<p class='banner-content font-black'>";
+	$content .= $text;
+	$content .= "</p>";
 	echo $content;
 }
 
@@ -318,17 +321,17 @@ function banner_footer($text) {
  * Banner CTA on Homepage
  */
 
-function home_banner_cta($id) {
-	$left = get_field('hbc_button_left', $id);
-	$right = get_field('hbc_button_right', $id);
+// function home_banner_cta($id) {
+// 	$left = get_field('hbc_button_left', $id);
+// 	$right = get_field('hbc_button_right', $id);
 	
-	$buttons = [
-		"left" => $left,
-		"right" => $right,
-	];
+// 	$buttons = [
+// 		"left" => $left,
+// 		"right" => $right,
+// 	];
 
-	return $buttons;
-}
+// 	return $buttons;
+// }
 
 
 /**
@@ -380,10 +383,10 @@ function get_sermons($number_of_sermons) {
 }
 
 function get_sermon_details($id, $title) {
-	$url = get_field('sermon_url', $id);
-	$preacher = get_field('sermon_preacher', $id);
-	$date = get_field('sermon_date', $id);
-	$desc = get_field('sermon_description', $id);
+	$url 			 = get_field('sermon_url', $id);
+	$preacher  = get_field('sermon_preacher', $id);
+	$date 		 = get_field('sermon_date', $id);
+	$desc 		 = get_field('sermon_description', $id);
 	$scripture = get_field('sermon_scripture', $id);
 
 	$sermon = [
