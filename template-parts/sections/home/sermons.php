@@ -16,28 +16,30 @@ $sermons = CFS()->get( 'latest_sermons' );
 
 
         <!-- Section Main Content -->
-        <div class="flex -mx-4">
+        <div class="px-4">
+        <div class="flex -mx-8">
             <?php foreach ($sermons as $key => $sermon) : ?>
                 <div class="w-1/3 px-4">
                     <article class="sermon shadow hover:shadow-md">
 
                         <!-- YT Link -->
-                        <div class="yt-link"><?= $sermon['latest_sermon_yt_link'] ?></div>
+                        <div class="yt-link"><?= $sermon['ls_link'] ?></div>
                         <div class="p-8">
                             <!-- Title -->
-                            <h1 class="text-lg"><?= $sermon['latest_sermon_title'] ?></h1>
+                            <h1 class="text-lg"><?= $sermon['ls_title'] ?></h1>
 
                             <!-- Preacher -->
-                            <p><?= $sermon['latest_sermon_preacher'] ?></p>
+                            <p><?= $sermon['ls_preacher'] ?></p>
 
                             <!-- Description -->
-                            <p><?= $sermon['latest_sermon_descr'] ?></p>
+                            <p><?= $sermon['ls_desc'] ?></p>
                         </div>
 
                     </article> <!-- sermon -->
                 </div> <!-- w-1/3 -->
             <?php endforeach; ?>
         </div> <!-- flex -->
+        </div>
 
     </div> <!-- container -->
 </div> <!-- section.sermons -->

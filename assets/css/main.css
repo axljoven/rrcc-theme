@@ -263,7 +263,7 @@ p {
 .subscription {
   position: relative; }
   .subscription-inner {
-    height: 465px;
+    height: 600px;
     background-color: #ececec; }
   .subscription .emaillist {
     width: 40%; }
@@ -288,60 +288,32 @@ p {
       display: inline-block;
       width: 155px;
       margin-left: 25px; }
-  .subscription .es_caption,
-  .subscription .es_subscription_message.success {
-    display: block;
-    font-size: 1.8rem;
-    text-align: center;
-    line-height: 1.3;
-    color: #404040; }
-  .subscription .es_subscription_message.success {
-    font-size: 1.2rem;
-    line-height: 1.7; }
-  .subscription .es_subscription_message.error {
-    display: block;
-    font-size: .9rem;
-    margin-top: 10px;
-    color: #B59656; }
-  .subscription .es-field-wrap {
-    display: inline-block;
-    width: 69%;
-    padding-right: 5px;
-    margin: 0; }
-    .subscription .es-field-wrap label {
-      display: inline-block;
-      width: 100%; }
-    .subscription .es-field-wrap input {
-      width: 100%;
-      padding: 16px 20px;
-      background-color: white;
-      border-color: rgba(0, 0, 0, 0.2);
-      font-size: .9rem;
-      line-height: -1; }
-  .subscription .es_submit_button {
-    display: inline-block;
-    width: 30%;
+  .subscription .tnp.tnp-subscription form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .subscription .tnp.tnp-subscription .tnp-field {
+    padding: 0 5px; }
+    .subscription .tnp.tnp-subscription .tnp-field label {
+      display: none; }
+    .subscription .tnp.tnp-subscription .tnp-field input {
+      padding: 10px 15px; }
+  .subscription .tnp.tnp-subscription .tnp-field.tnp-field-email {
+    width: 300px; }
+  .subscription .tnp.tnp-subscription input.tnp-submit {
     background-color: #22262D;
-    text-transform: uppercase;
-    font-size: .9rem;
-    color: white;
-    border: none;
-    padding: 18px 25px;
     border-radius: 0;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s; }
-    .subscription .es_submit_button:hover {
-      cursor: pointer;
-      background-color: #0c0d10; }
-  .subscription .es_spinner_image img {
-    display: block;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    left: 0;
-    right: 0; }
+    padding: 18px 30px;
+    line-height: 1;
+    text-transform: uppercase; }
+    .subscription .tnp.tnp-subscription input.tnp-submit:hover {
+      cursor: pointer; }
 
 .button {
   position: relative;
@@ -448,6 +420,55 @@ p {
   margin-top: 20px;
   font-size: .9rem;
   color: white; }
+
+.featured-event .featured-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch; }
+  .featured-event .featured-info-container .event-title {
+    margin-bottom: 18px;
+    font-size: 2rem;
+    font-weight: 700; }
+    .featured-event .featured-info-container .event-title a {
+      color: #B59656; }
+  .featured-event .featured-info-container .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    margin-bottom: 10px;
+    font-size: .9rem; }
+  .featured-event .featured-info-container .info .icon-container {
+    width: 40px; }
+  .featured-event .featured-info-container .info .icon {
+    font-size: 1.5rem;
+    color: #B59656; }
+  .featured-event .featured-info-container .excerpt {
+    margin-top: 20px; }
 
 #page-home .banner-content {
   text-transform: uppercase;

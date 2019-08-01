@@ -9,6 +9,7 @@
     <!-- Columns -->
     <div class="columns">
         <div class="container mx-auto pb-8 pt-10 section-arrow section-arrow-white">
+            <div class="px-12">
                 <div class="flex -mx-12">
                     
                     <!-- Site Logo -->
@@ -29,6 +30,7 @@
                     </div>
 
                 </div> <!-- flex -->
+            </div>
         </div>
     </div>
 

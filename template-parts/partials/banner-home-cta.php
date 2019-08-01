@@ -7,14 +7,14 @@
 <?php
 // Fetch CTA info
 $cta = [
-    'show' => CFS()->get( 'cta_show' ),
+    'show' => CFS()->get( 'banner_cta_show' ),
     'primary' => [
-        'title' => CFS()->get( 'cta_primary_title' ),
-        'url'   => CFS()->get( 'cta_primary_url' )
+        'title' => CFS()->get( 'banner_cta_primary_title' ),
+        'url'   => CFS()->get( 'banner_cta_primary_url' )
     ],
     'secondary' => [
-        'title' => CFS()->get( 'cta_secondary_title' ),
-        'url'   => CFS()->get( 'cta_secondary_url' )
+        'title' => CFS()->get( 'banner_cta_secondary_title' ),
+        'url'   => CFS()->get( 'banner_cta_secondary_url' )
     ],
 ];
 

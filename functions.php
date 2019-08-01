@@ -194,7 +194,7 @@ function bdump($e) {
 function get_menu($name, $class) {
 	// Get menu
 	$arr = wp_get_nav_menu_items($name);
-	// bdump($arr);
+	
 	if ( $arr ) :
 		// Generate menu
 		$menu = "<ul class='menu m-0 px-0 py-1 " . $class . "'>";
@@ -457,3 +457,77 @@ function get_gallery($id) {
 	}
 	return $images;
 }
+
+/**
+ * Fetch events
+ */
+
+function get_events() {
+	$events = get_posts([
+		'post_type' 	=> 'event',
+		'post_status' => 'publish',
+	]);
+
+	// Events exist
+	if (count($events) > 0) :
+		// Get custom fields on each event
+		// then save all info on $eventsArr
+		$eventsArr = [];
+		foreach ($events as $key => $event) :
+			array_push($eventsArr, [
+				'id'            => $event->ID,
+				'title'         => $event->post_title,
+				'url'           => $event->guid,
+				'custom_fields' => get_events_custom_fields($event->ID)
+			]);
+		endforeach;
+		return $eventsArr; // Return
+
+	// No events found
+	else :
+		return false;
+	endif;
+}
+
+/**
+ * Fetch event's custom field info
+ */
+function get_events_custom_fields($event_id) {
+	$info = [
+		'is_featured'    => CFS()->get('event_feature_event', $event_id),
+		'start_date'     => CFS()->get('event_start_date', $event_id),
+		'end_date'       => CFS()->get('event_end_date', $event_id),
+		'date_time_info' => CFS()->get('event_date_time', $event_id),
+		'excerpt'        => CFS()->get('event_excerpt', $event_id),
+		'location'       => CFS()->get('event_location', $event_id),
+		'description'    => CFS()->get('event_desc', $event_id),
+		'speakers'       => CFS()->get('event_speakers', $event_id),
+		'price'          => CFS()->get('event_price', $event_id),
+		'poster'         => CFS()->get('event_poster', $event_id),
+		'featured_image' => CFS()->get('event_featured_image', $event_id),
+		'upcoming_image' => CFS()->get('event_upcoming_image', $event_id),
+		'form_code'      => CFS()->get('event_form_code', $event_id),
+	];
+	return $info;
+}
+
+/**
+ * Filter featured events
+ */
+
+function filter_featured_events($events) {
+	$filtered_events = [];
+	foreach ($events as $key => $event) :
+		$custom_fields = $event['custom_fields'];
+		if ($custom_fields['is_featured'] != 0) :
+			array_push($filtered_events, $event);
+		endif;
+	endforeach;
+
+	if (count($filtered_events) > 0) :
+		return $filtered_events;
+	endif;
+	
+	return false;
+}
+

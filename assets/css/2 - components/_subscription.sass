@@ -6,8 +6,7 @@
     position: relative
 
     &-inner
-        height: 465px
-        // background-color: #FCFCFC
+        height: 600px
         background-color: #ececec
 
     .emaillist
@@ -36,65 +35,37 @@
             width: 155px
             margin-left: 25px
 
-    .es_caption,
-    .es_subscription_message.success
-        display: block
-        font-size: 1.8rem
-        text-align: center
-        line-height: 1.3
-        color: $c-text
+    // The Newsletter Plugin
+    .tnp.tnp-subscription
+        
+        // Form
+        form
+            display: flex
+            align-items: flex-end
+            justify-content: center
+            // width: 600px
+        
+        // All Input fields
+        .tnp-field
+            padding: 0 5px
+            label
+                display: none
+            input
+                padding: 10px 15px
 
-    .es_subscription_message.success
-        font-size: 1.2rem
-        line-height: 1.7
+        // Email
+        .tnp-field.tnp-field-email
+            width: 300px
 
-    .es_subscription_message.error
-        display: block
-        font-size: .9rem
-        margin-top: 10px
-        color: $c-accent
-
-
-    .es-field-wrap
-        display: inline-block
-        width: 69%
-        padding-right: 5px
-        margin: 0
-
-        label
-            display: inline-block
-            width: 100%
-
-        input
-            width: 100%
-            padding: 16px 20px
-            background-color: white
-            border-color: rgba(0,0,0,.2)
-            font-size: .9rem
-            line-height: -1
+        // Submit button
+        input.tnp-submit
+            background-color: $c-default
+            border-radius: 0
+            padding: 18px 30px
+            line-height: 1
+            text-transform: uppercase
+            &:hover
+                cursor: pointer
 
 
-    .es_submit_button
-        display: inline-block
-        width: 30%
-        background-color: $c-default
-        text-transform: uppercase
-        font-size: .9rem
-        color: white
-        border: none
-        padding: 18px 25px
-        border-radius: 0
-        transition: all .3s
-
-        &:hover
-            cursor: pointer
-            background-color: darken($c-default, 10)
-
-    .es_spinner_image img
-        display: block
-        margin-top: 15px
-        margin-left: auto
-        margin-right: auto
-        position: absolute
-        left: 0
-        right: 0
+        

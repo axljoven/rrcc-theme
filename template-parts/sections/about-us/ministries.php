@@ -2,9 +2,8 @@
 /**
  * Ministries
  */
-?>
 
-<?php $ministries = get_ministries(get_the_id()) ?>
+$ministries = CFS()->get('about_ministries'); ?>
 
 <div class="section ministries py-16">
     <div class="container mx-auto">
@@ -16,9 +15,9 @@
             <?php foreach ( $ministries as $key => $item ) : ?>
                 <div class="w-1/3 px-6">
                     <article class="ministry">
-                        <div class="ministry-image mb-8"><img src="<?= $item['image'] ?>" alt=""></div>
-                        <h1 class="ministry-name text-xl text-gold mb-4"><?= $item['name'] ?></h1>
-                        <div class="ministry-description"><?= $item['desc'] ?></div>
+                        <div class="ministry-image mb-8"><img src="<?= $item['about_ministry_image'] ?>" alt=""></div>
+                        <h1 class="ministry-name text-xl text-gold mb-4"><?= $item['about_ministry_header'] ?></h1>
+                        <div class="ministry-description"><?= $item['about_ministry_desc'] ?></div>
                     </article>
                 </div>
             <?php endforeach; ?>
