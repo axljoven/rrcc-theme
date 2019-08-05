@@ -8,7 +8,7 @@ $sermons = CFS()->get( 'latest_sermons' );
 ?>
 
 <div class="section sermons">
-    <div class="py-16 container mx-auto relative">
+    <div class="px-8 py-16 container mx-auto relative">
 
         <!-- Section Header -->
         <h2 class="mb-12 section-header header-left-decor">Latest Sermons</h2>

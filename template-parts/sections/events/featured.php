@@ -12,24 +12,26 @@ $featured_events = filter_featured_events($events);
 if ($featured_events !== '' && (count($featured_events) > 0)) : ?>
 
 	<div class="section featured-events">
-		<div class="py-16 container mx-auto relative">
+		<div class="px-8 py-16 container mx-auto relative">
 			<h4 class="mb-8 section-header header-left-decor">Featured events</h4>
 
 			<?php foreach ($featured_events as $key => $event) : ?>
 				<article class="featured-event"> 
-					<div class="flex -mx-8">
+					<div class="block md:flex -mx-8">
 							
 							<!-- Featured Image -->
-							<div class="w-1/2 px-8">
+							<div class="w-full lg:w-1/2 px-8">
 								<div class="featured-image">
-									<img 
-										alt="<?= $event['title'] . ' Featured Image' ?>"
-										src="<?= $event['custom_fields']['featured_image'] ?>">
+									<a href="<?= $event['url'] ?>">
+										<img 
+											alt="<?= $event['title'] . ' Featured Image' ?>"
+											src="<?= $event['custom_fields']['featured_image'] ?>">
+									</a>
 								</div>								
 							</div>
 
 							<!-- Info -->
-							<div class="w-1/2 px-8 featured-info-container">
+							<div class="w-full lg:w-1/2 px-8 featured-info-container">
 								<!-- Title -->
 								<h1 class="event-title">
 									<a href="<?= $event['url'] ?>">

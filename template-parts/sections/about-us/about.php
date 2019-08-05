@@ -12,9 +12,9 @@ $content = [
 ?>
 
 <div class="section about relative">
-    <div class="py-16 container mx-auto relative section-arrow-gray">
+    <div class="px-8 py-16 container mx-auto relative section-arrow-gray">
         
-        <h2 class="mb-6 section-header header-left-decor"><?= $content['header'] ?></h2>
+        <h2 class="mb-6 section-header header-left-decor text-lg"><?= $content['header'] ?></h2>
         <div class="section-content">
             <?= $content['info'] ?>
         </div> <!-- section-content -->

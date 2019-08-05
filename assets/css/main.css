@@ -421,6 +421,10 @@ p {
   font-size: .9rem;
   color: white; }
 
+@media (max-width: 767px) {
+  .featured-event .featured-image {
+    margin-bottom: 20px; } }
+
 .featured-event .featured-info-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,7 +464,7 @@ p {
     justify-content: flex-start;
     -ms-flex-line-pack: stretch;
     align-content: stretch;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: .9rem; }
   .featured-event .featured-info-container .info .icon-container {
     width: 40px; }
@@ -468,6 +472,59 @@ p {
     font-size: 1.5rem;
     color: #B59656; }
   .featured-event .featured-info-container .excerpt {
+    margin-top: 20px; }
+
+@media (max-width: 767px) {
+  .upcoming-event .upcoming-image {
+    margin-bottom: 20px; } }
+
+.upcoming-event .upcoming-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch; }
+  .upcoming-event .upcoming-info-container .event-title {
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+    font-weight: 700; }
+    .upcoming-event .upcoming-info-container .event-title a {
+      color: #B59656; }
+  .upcoming-event .upcoming-info-container .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    margin-bottom: 5px;
+    font-size: .9rem; }
+  .upcoming-event .upcoming-info-container .info .icon-container {
+    width: 40px; }
+  .upcoming-event .upcoming-info-container .info .icon {
+    font-size: 1.5rem;
+    color: #B59656; }
+  .upcoming-event .upcoming-info-container .excerpt {
     margin-top: 20px; }
 
 #page-home .banner-content {
