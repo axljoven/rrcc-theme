@@ -61,6 +61,9 @@ if ($featured_events !== '' && (count($featured_events) > 0)) : ?>
 								<!-- Excerpt -->
 								<div class="excerpt">
 									<?= $event['custom_fields']['excerpt'] ?>
+									<a class="inline-block mt-4 button button-bordered-accent" href="<?= $event['url'] ?>">
+										Learn More
+									</a>
 								</div>
 							</div>
 

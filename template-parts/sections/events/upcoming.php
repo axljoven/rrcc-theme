@@ -11,13 +11,13 @@ if ($upcoming_events !== '' && (count($upcoming_events) > 0)) : ?>
 	<div class="section upcoming-events">
 		
 		<div class="px-8 py-16 container mx-auto relative">
-			<div class="flex -mx-8">
-				<div class="w-full lg:w-1/2 px-8 order-last">
-					<div class="pl-24">
+			<div class="block lg:flex -mx-8 mb-12">
+				<div class="w-full lg:w-1/2 px-8 order-first lg:order-last">
+					<div class="lg:pl-24">
 						<h4 class="mb-8 section-header header-left-decor">Upcoming events</h4>
 					</div>
 				</div>
-				<div class="w-full lg:w-1/2 px-8">
+				<div class="w-full lg:w-1/2 px-8 bg-white z-10">
 					<p>
 						Do your best to present yourself to God as one approved, a worker 
 						who has no need to be ashamed, rightly handling the word of truth. - 

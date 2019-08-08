@@ -5,9 +5,10 @@
 
 .button
     position: relative
-    padding: 15px 25px
+    padding: 12px 25px
     border: 1px solid rgba(0,0,0,0)
     transition: all .3s
+    font-size: .8rem
 
     &-bordered,
     &-bordered:before
@@ -36,5 +37,11 @@
     &-bordered-accent
         background: transparent
         border: 2px solid $c-accent
+        color: $c-accent !important
+        text-transform: uppercase
+
+        &:hover
+            color: white !important
+            background-color: $c-accent
 
 
