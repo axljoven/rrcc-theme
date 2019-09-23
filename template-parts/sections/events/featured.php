@@ -51,7 +51,7 @@ if ($featured_events !== '' && (count($featured_events) > 0)) : ?>
 								
 								<div class="info info-location">
 									<div class="icon-container">
-										<span class="icon ion-md-pin"></span>
+										<span class="icon ion-ios-pin"></span>
 									</div>
 									<div class="value">
 										<?= $event['custom_fields']['location'] ?>

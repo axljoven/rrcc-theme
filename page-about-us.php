@@ -7,28 +7,28 @@
 <!-- Main HTML -->
 <?php get_header() ?>
 
-    <main id="page-about-us">
-        
-        <!-- Banner -->
-        <?php get_template_part('template-parts/partials/banner') ?>
+	<main id="page-about-us">
+		
+		<!-- Banner -->
+		<?php get_template_part('template-parts/partials/banner') ?>
 
-        <div id="main-content">
-            <!-- About -->
-            <?php get_template_part('template-parts/sections/about-us/about') ?>
+		<div id="main-content">
+			<!-- About -->
+			<?php get_template_part('template-parts/sections/about-us/about') ?>
 
-            <!-- Gallery -->
-            <?php get_template_part('template-parts/sections/about-us/gallery') ?>
+			<!-- Gallery -->
+			<?php get_template_part('template-parts/sections/about-us/gallery') ?>
 
-            <!-- Ministries -->
-            <?php get_template_part('template-parts/sections/about-us/ministries') ?>
+			<!-- Ministries -->
+			<?php get_template_part('template-parts/sections/about-us/ministries') ?>
 
-            <!-- Statement of Faith -->
-            <?php get_template_part('template-parts/sections/about-us/statement-of-faith') ?>
-        </div>
+			<!-- Statement of Faith -->
+			<?php get_template_part('template-parts/sections/about-us/statement-of-faith') ?>
+		</div>
 
-        <!-- Subscription -->
-        <?php get_template_part('template-parts/partials/subscription') ?>
+		<!-- Subscription -->
+		<?php get_template_part('template-parts/partials/subscription') ?>
 
-    </main>
+	</main>
 
 <?php get_footer() ?>

@@ -55,9 +55,8 @@ p {
     color: #fff;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
-    transition: all .3s; }
-    .site-header .menu-link:hover {
-      color: #B59656; }
+    transition: all .3s;
+    color: #B59656; }
   .site-header .search-icon {
     width: 60px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -73,9 +72,8 @@ p {
       -o-transition: all .3s;
       transition: all .3s; }
     .site-header .search-icon:hover {
-      background-color: white; }
-      .site-header .search-icon:hover .icon {
-        color: #B59656; }
+      background-color: white;
+      color: #B59656; }
 
 .site-footer .columns {
   background-color: #22262D; }
@@ -84,9 +82,8 @@ p {
   font-family: "Playfair Display", serif; }
 
 .site-footer .menu-quick-links .menu-item {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-  .site-footer .menu-quick-links .menu-item:last-child {
-    border: none; }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border: none; }
 
 .site-footer .menu-quick-links .menu-link {
   display: inline-block;
@@ -95,9 +92,8 @@ p {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
-  font-size: .9rem !important; }
-  .site-footer .menu-quick-links .menu-link:hover {
-    color: #B59656; }
+  font-size: .9rem !important;
+  color: #B59656; }
 
 .site-footer .church-info-table .info p {
   color: white;
@@ -303,11 +299,9 @@ p {
     -ms-flex-pack: center;
     justify-content: center; }
   .subscription .tnp.tnp-subscription .tnp-field {
-    padding: 0 5px; }
-    .subscription .tnp.tnp-subscription .tnp-field label {
-      display: none; }
-    .subscription .tnp.tnp-subscription .tnp-field input {
-      padding: 10px 15px; }
+    padding: 0 5px;
+    display: none;
+    padding: 10px 15px; }
   .subscription .tnp.tnp-subscription .tnp-field.tnp-field-email {
     width: 300px; }
   .subscription .tnp.tnp-subscription input.tnp-submit {
@@ -315,9 +309,8 @@ p {
     border-radius: 0;
     padding: 18px 30px;
     line-height: 1;
-    text-transform: uppercase; }
-    .subscription .tnp.tnp-subscription input.tnp-submit:hover {
-      cursor: pointer; }
+    text-transform: uppercase;
+    cursor: pointer; }
 
 .button {
   position: relative;
@@ -547,6 +540,54 @@ p {
     .upcoming-event .upcoming-info-container .excerpt {
       margin-top: 20px; }
 
+.single-event .banner.h-screen {
+  height: 500px; }
+
+.single-event h3 {
+  font-size: 1.7rem;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+.single-event h4 {
+  font-size: 1.4rem;
+  margin-top: 18px;
+  margin-bottom: 8px; }
+
+.single-event .poster {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+  .single-event .poster .caption {
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: .8rem; }
+
+.single-event .info {
+  margin-bottom: 30px; }
+  .single-event .info:last-child {
+    margin-bottom: 0; }
+  .single-event .info-header {
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .single-event .info .icon {
+    width: 28px;
+    margin-right: 10px;
+    font-size: 1.7rem;
+    color: #B59656; }
+  .single-event .info .value {
+    padding-left: 38px; }
+
 #page-home .banner-content {
   text-transform: uppercase;
   font-size: 4.5rem;
@@ -560,11 +601,10 @@ p {
   position: absolute;
   top: 10%;
   right: 0;
-  margin: 0; }
-  #page-home .section.about .gallery-image {
-    margin-right: 10px; }
-    #page-home .section.about .gallery-image:last-child {
-      margin-right: 0; }
+  margin: 0;
+  margin-right: 10px; }
+  #page-home .section.about .gallery:last-child {
+    margin-right: 0; }
 
 #page-home .section.sermons .section-cta {
   padding: 0;
