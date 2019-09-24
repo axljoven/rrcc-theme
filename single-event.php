@@ -31,35 +31,14 @@ $event = [
 				<div class="section relative">
 					<div class="px-8 py-16 container mx-auto relative section-arrow-gray">
 
-						<!-- Description -->
-						<div class="section-content mb-24">
-							<h2 class="mb-6 section-header header-left-decor text-lg">About the event</h2>
-
-							<div class="block lg:flex -mx-8">
-								<!-- Poster -->
-								<div class="mb-24 lg:mb-0 w-full lg:w-1/3 px-8">
-									<figure class="poster w-100">
-										<img src="<?= $event['poster'] ?>" alt="<?= $event['title'] . 'poster' ?>">
-										<figcaption class="caption"><?= $event['title'] . 'poster' ?></figcaption>
-									</figure>
-								</div>
-
-								<!-- Description -->
-								<div class="mb-24 lg:mb-0 w-full lg:w-2/3 px-8">
-									<?= $event['desc'] ?>
-								</div>
-							</div>
-						</div>
-
-						
 						<!-- Details and Registration -->
-						<div class="px-8 py-16 container mx-auto">
+						<div class="container mx-auto">
+							<h2 class="mb-12 section-header header-left-decor text-lg">Details</h2>
 							<div class="block lg:flex -mx-8">
 
 								<!-- Details -->
 								<div class="section-content mb-24 lg:mb-0 w-full lg:w-1/2 px-8">
-									<h2 class="mb-6 section-header header-left-decor text-lg">Details and Registration</h2>
-
+									
 									<!-- Date and time -->
 									<div class="info info-date-time">
 										<div class="info-header"><span class="icon ion-ios-calendar"></span> Date and Time</div>
@@ -86,16 +65,29 @@ $event = [
 								</div> <!-- section-content -->
 
 
-								<!-- Registration -->
+								<!-- Poster -->
 								<div class="section-content w-full lg:w-1/2 px-8">
-									<!-- Form -->
-									<div class="registration-form">
-										<?= $event['form_code'] ?>
-									</div>
+									<figure class="poster w-100">
+										<a class="poster-image" href="<?= $event['poster'] ?>">
+											<img src="<?= $event['poster'] ?>" alt="<?= $event['title'] . 'poster' ?>">
+										</a>
+										<figcaption class="caption"><?= $event['title'] . ' poster' ?></figcaption>
+									</figure>
 								</div> <!-- section-content -->
 
 							</div> <!-- block md:flex -mx-8 -->
 						</div> <!-- container -->
+
+
+						<!-- Description -->
+						<div class="section-content mb-12 pt-24">
+							<h2 class="mb-12 section-header header-left-decor text-lg">About the event</h2>
+
+							<!-- Description -->
+							<div class="mb-8 lg:mb-0">
+								<?= $event['desc'] ?>
+							</div>
+						</div>
 
 
 					</div> <!-- container -->
@@ -108,5 +100,8 @@ $event = [
 		<?php get_template_part('template-parts/partials/subscription') ?>
 
 	</main>
-
+<!-- Form -->
+<!-- <div class="registration-form">
+	<?//= $event['form_code'] ?>
+</div> -->
 <?php get_footer() ?>

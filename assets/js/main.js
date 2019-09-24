@@ -13,6 +13,14 @@ let newsletter_form = {
 	}
 };
 
+let single_event = {
+	// Manages the event poster fancybox
+	// inside the single event page
+	fancybox_init: function(el) {
+		$(el).fancybox({});
+	}
+}
+
 
 /**
  * ----------------------------------------------
@@ -22,4 +30,5 @@ let newsletter_form = {
 
 $(document).ready(function() {
 	newsletter_form.generate_form_placeholder();
+	single_event.fancybox_init('body.single-event .poster-image');
 })

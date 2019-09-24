@@ -12,7 +12,7 @@ $featured_events = filter_featured_events($events);
 if ($featured_events !== '' && (count($featured_events) > 0)) : ?>
 
 	<div class="section featured-events">
-		<div class="px-8 py-16 container mx-auto relative">
+		<div class="px-8 py-16 container mx-auto relative section-arrow-gray">
 			<h4 class="mb-8 section-header header-left-decor">Featured events</h4>
 
 			<?php foreach ($featured_events as $key => $event) : ?>

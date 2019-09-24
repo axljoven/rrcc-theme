@@ -235,7 +235,7 @@ p {
   .section-arrow-white:before, .section-arrow-gray:before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 20px;
     top: 0;
     width: 0;
     height: 0;
@@ -300,7 +300,6 @@ p {
     justify-content: center; }
   .subscription .tnp.tnp-subscription .tnp-field {
     padding: 0 5px;
-    display: none;
     padding: 10px 15px; }
   .subscription .tnp.tnp-subscription .tnp-field.tnp-field-email {
     width: 300px; }
