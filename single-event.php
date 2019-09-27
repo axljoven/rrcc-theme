@@ -6,7 +6,7 @@
  */
 
 $event = [
-	'title'	    => get_the_title(get_the_id()),
+	'title'         => get_the_title(get_the_id()),
 	'date_and_time' => CFS()->get('event_date_time'),
 	'location'      => CFS()->get('event_location'),
 	'desc'          => CFS()->get('event_desc'),
@@ -62,7 +62,7 @@ $event = [
 										<div class="info-header"><span class="icon ion-ios-pricetags"></span> Registration Fee</div>
 										<div class="value"><?= $event['reg_fee'] ?></div>
 									</div>
-								</div> <!-- section-content -->
+								</div>
 
 
 								<!-- Poster -->
@@ -82,10 +82,16 @@ $event = [
 						<!-- Description -->
 						<div class="section-content mb-12 pt-24">
 							<h2 class="mb-12 section-header header-left-decor text-lg">About the event</h2>
-
-							<!-- Description -->
 							<div class="mb-8 lg:mb-0">
 								<?= $event['desc'] ?>
+							</div>
+						</div>
+
+						<!-- Registration -->
+						<div class="section-content mb-12 pt-24">
+							<h2 class="mb-12 section-header header-left-decor text-lg">Registration</h2>
+							<div class="registration-form">
+								<?= $event['form_code'] ?>
 							</div>
 						</div>
 
@@ -100,8 +106,5 @@ $event = [
 		<?php get_template_part('template-parts/partials/subscription') ?>
 
 	</main>
-<!-- Form -->
-<!-- <div class="registration-form">
-	<?//= $event['form_code'] ?>
-</div> -->
+
 <?php get_footer() ?>
